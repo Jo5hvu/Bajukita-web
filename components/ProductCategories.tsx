@@ -5,14 +5,14 @@ import Link from "next/link";
 
 export default function ProductCategories() {
   return (
-    <section id="products" className="bg-[#F5F5F4] px-4 py-16 md:px-16">
+    <section id="products" className="bg-[#F5F5F4] px-4 py-10 md:px-16 md:py-16">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-10 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
+        <div className="mb-8 grid gap-5 md:mb-10 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <p className="mb-3 inline-block rounded-full bg-white px-4 py-2 text-xs font-black uppercase text-[#A7592F]">
+            <p className="mb-3 inline-block rounded-full bg-white px-3 py-2 text-[0.68rem] font-black uppercase text-[#A7592F] md:px-4 md:text-xs">
               Katalog item
             </p>
-            <h2 className="max-w-3xl text-4xl font-black leading-none tracking-[-0.04em] text-[#0D0B09] md:text-6xl">
+            <h2 className="max-w-3xl text-3xl font-black leading-none tracking-[-0.04em] text-[#0D0B09] md:text-6xl">
               item cetakan & pakaian
             </h2>
           </div>
@@ -22,7 +22,7 @@ export default function ProductCategories() {
           </p>
         </div>
 
-        <div className="rounded-[2rem] border border-[#BCBEBF] bg-[#EBEBEC] p-6 shadow-[0_20px_80px_rgba(246,198,47,0.08)] md:p-8">
+        <div className="rounded-[1.5rem] border border-[#BCBEBF] bg-[#EBEBEC] p-3 shadow-[0_20px_80px_rgba(246,198,47,0.08)] md:rounded-[2rem] md:p-8">
           <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-xs font-black uppercase text-[#A7592F]">
@@ -40,7 +40,7 @@ export default function ProductCategories() {
             </Link>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-3 min-[420px]:grid-cols-2 md:gap-4 lg:grid-cols-4">
             {catalogueProducts.map((item) => (
               <article
                 key={item.id}
@@ -50,7 +50,7 @@ export default function ProductCategories() {
                   <ImageSlot
                     src={item.image}
                     label={`Letak ${item.image.split("/").pop()}`}
-                    className="h-36 rounded-[1rem]"
+                    className="h-32 rounded-[1rem] sm:h-36"
                   />
                 </Link>
                 <div className="mt-3 flex items-center justify-between gap-3 px-1">

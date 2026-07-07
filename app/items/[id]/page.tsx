@@ -50,12 +50,12 @@ export default async function ItemDetailPage({ params }: ItemDetailPageProps) {
     <main className="min-h-screen bg-[#EBEBEC] text-[#0D0B09]">
       <Navigation />
 
-      <section className="px-4 py-8 md:px-16 md:py-10">
+      <section className="px-4 py-6 md:px-16 md:py-10">
         <div className="mx-auto max-w-6xl">
-          <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+          <div className="mb-5 grid gap-3 min-[420px]:grid-cols-2 md:mb-6">
             <Link
               href="/items"
-              className="rounded-full border border-[#BCBEBF] bg-white/70 px-4 py-2 text-xs font-black text-[#5A4224] transition hover:border-[#fd7c03]"
+              className="rounded-full border border-[#BCBEBF] bg-white/70 px-4 py-2 text-center text-xs font-black text-[#5A4224] transition hover:border-[#fd7c03]"
             >
               Back to items
             </Link>
@@ -63,7 +63,7 @@ export default async function ItemDetailPage({ params }: ItemDetailPageProps) {
               href={`https://wa.me/${BRAND.whatsapp}?text=${message}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-[#0D0B09] px-5 py-2 text-xs font-black text-white transition hover:bg-[#fd7c03]"
+              className="rounded-full bg-[#0D0B09] px-5 py-2 text-center text-xs font-black text-white transition hover:bg-[#fd7c03]"
             >
               WhatsApp Order
             </a>
@@ -74,18 +74,18 @@ export default async function ItemDetailPage({ params }: ItemDetailPageProps) {
               <ImageSlot
                 src={product.image}
                 label={`Replace ${product.image.split("/").pop()}`}
-                className="h-[320px] md:h-[390px]"
+                className="h-[260px] min-[420px]:h-[320px] md:h-[390px]"
               />
             </div>
 
-            <div className="rounded-[1.75rem] border border-[#EAD8C8] bg-white/80 p-5 md:p-7">
+            <div className="rounded-[1.5rem] border border-[#EAD8C8] bg-white/80 p-4 md:rounded-[1.75rem] md:p-7">
               <p className="mb-3 inline-flex rounded-full bg-[#FFF8D6] px-3 py-1.5 text-xs font-black uppercase text-[#A7592F]">
                 {product.code}
               </p>
-              <h1 className="text-3xl font-black leading-none tracking-[-0.04em] md:text-5xl">
+              <h1 className="text-2xl font-black leading-none tracking-[-0.03em] min-[420px]:text-3xl md:text-5xl">
                 {product.name}
               </h1>
-              <p className="mt-4 text-2xl font-black text-[#fd7c03]">
+              <p className="mt-3 text-xl font-black text-[#fd7c03] md:mt-4 md:text-2xl">
                 {product.priceLabel}
               </p>
 

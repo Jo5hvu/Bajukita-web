@@ -1,5 +1,6 @@
 import { BRAND } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -10,19 +11,19 @@ const navItems = [
 export default function Navigation() {
   return (
     <nav className="sticky top-0 z-50 border-b border-[#E8C84E]/40 bg-[#EBEBEC]/95 shadow-sm backdrop-blur">
-      <div className="mx-auto grid max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 py-4 md:px-16">
-        <a href="#" className="flex min-w-0 items-center">
+      <div className="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-3 px-4 py-3 md:grid-cols-[1fr_auto_1fr] md:px-16 md:py-4">
+        <Link href="/" className="flex min-w-0 items-center">
           <Image
             src="/images/logos/al-ikhlas-printing-logo.png"
             alt="Al-Ikhlas Printing logo"
             width={180}
             height={54}
-            className="h-10 w-auto max-w-[140px] object-contain md:h-12 md:max-w-[180px]"
+            className="h-8 w-auto max-w-[116px] object-contain sm:max-w-[140px] md:h-12 md:max-w-[180px]"
             priority
           />
-        </a>
+        </Link>
 
-        <a href="#" className="flex justify-center">
+        <Link href="/" className="hidden justify-center md:flex">
           <Image
             src="/images/logos/bajukita-logo.png"
             alt="Bajukita.my logo"
@@ -31,18 +32,18 @@ export default function Navigation() {
             className="h-auto w-40 object-contain md:w-56"
             priority
           />
-        </a>
+        </Link>
 
         <a
           href={`https://wa.me/${BRAND.whatsapp}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="justify-self-end rounded-full bg-[#1F1F1F] px-4 py-3 text-xs font-bold text-white shadow-sm transition hover:bg-[#FD7C03] md:px-6 md:text-sm"
+          className="justify-self-end rounded-full bg-[#1F1F1F] px-3 py-2.5 text-[0.68rem] font-bold text-white shadow-sm transition hover:bg-[#FD7C03] sm:text-xs md:px-6 md:py-3 md:text-sm"
         >
-          Dapatkan Sebut Harga
+          Sebut Harga
         </a>
       </div>
-      <div className="mx-auto hidden max-w-7xl justify-center gap-8 px-4 pb-4 text-sm font-bold md:flex">
+      <div className="mx-auto flex max-w-7xl justify-center gap-5 px-4 pb-3 text-xs font-bold md:gap-8 md:pb-4 md:text-sm">
         {navItems.map((item) => (
           <a
             key={item.href}

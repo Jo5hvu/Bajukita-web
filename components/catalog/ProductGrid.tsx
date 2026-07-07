@@ -25,7 +25,7 @@ export default function ProductGrid({ products, viewMode }: ProductGridProps) {
       className={
         viewMode === "list"
           ? "grid gap-4"
-          : "grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          : "grid gap-3 min-[420px]:grid-cols-2 md:gap-4 lg:grid-cols-4"
       }
     >
       {products.map((product) => (

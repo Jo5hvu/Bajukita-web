@@ -18,7 +18,7 @@ export default function ProductCard({ product, viewMode }: ProductCardProps) {
       <Link
         href={`/items/${product.id}`}
         className={`relative block overflow-hidden rounded-[1rem] bg-[#F5F5F4] ${
-          isList ? "min-h-36" : "aspect-[1/0.78]"
+          isList ? "min-h-36" : "aspect-[1/0.82] sm:aspect-[1/0.78]"
         }`}
       >
         <div
