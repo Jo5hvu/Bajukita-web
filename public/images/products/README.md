@@ -2,6 +2,8 @@
 
 Drop product PNG files into this folder using these exact filenames.
 
+The files already exist as transparent placeholder PNGs so the website paths are ready. Replace any placeholder with the real product image using the same filename.
+
 Hero slots:
 
 - `hero-main.png`

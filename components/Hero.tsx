@@ -25,11 +25,11 @@ export default function Hero() {
                 Pakaian tempahan khas
               </p>
               <h1 className="text-[4.6rem] font-black leading-[0.82] tracking-[-0.06em] text-[#0D0B09] sm:text-[6.5rem] lg:text-[7rem]">
-                gaya
-                <br />
-                milik
+                baju
                 <br />
                 kita
+                <br />
+                gaya kita
               </h1>
             </div>
 
@@ -57,7 +57,7 @@ export default function Hero() {
               className="absolute bottom-8 right-8 grid h-16 w-16 place-items-center rounded-2xl bg-white text-3xl font-black text-[#0D0B09] shadow-xl transition hover:bg-[#FD7C03] hover:text-white"
               aria-label="Lihat produk"
             >
-              ↗
+              &gt;
             </a>
           </div>
 
@@ -65,7 +65,7 @@ export default function Hero() {
             <div className="rounded-[2rem] border border-[#BCBEBF] bg-white/80 p-6">
               <p className="text-5xl font-black text-[#0D0B09]">320K</p>
               <p className="mt-2 text-xs font-bold uppercase text-[#6D6E6C]">
-                pelanggan dan pengikut
+                Jumlah Tempahan
               </p>
             </div>
             <ImageSlot

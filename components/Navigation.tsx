@@ -2,8 +2,9 @@ import { BRAND } from "@/lib/constants";
 import Image from "next/image";
 
 const navItems = [
-  { label: "Produk", href: "#products" },
-  { label: "Tempahan", href: "#order" },
+  { label: "Home", href: "/" },
+  { label: "Items", href: "/items" },
+  { label: "Contact Us", href: "/#order" },
 ];
 
 export default function Navigation() {
