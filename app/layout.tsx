@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ms" className="h-full scroll-smooth">
-      <body className="min-h-full bg-[#FFF7EF] antialiased">{children}</body>
+      <body className="min-h-full bg-[#EBEBEC] antialiased">{children}</body>
     </html>
   );
 }

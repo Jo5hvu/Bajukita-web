@@ -6,20 +6,14 @@ export default function Footer() {
     <footer className="border-t border-[#EAD8C8] bg-white px-4 py-10 md:px-16">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
         <div>
-          <div className="flex items-center gap-3">
+          <div>
             <Image
-              src="/bajukita-logo.png"
+              src="/images/logos/bajukita-logo.png"
               alt="Bajukita.my logo"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-2xl object-contain"
+              width={320}
+              height={100}
+              className="h-auto w-48 object-contain md:w-60"
             />
-            <div>
-              <p className="font-black text-[#1F1F1F]">{BRAND.name}</p>
-              <p className="text-xs font-semibold text-[#6F625A]">
-                {BRAND.tagline}
-              </p>
-            </div>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-6 text-[#6F625A]">
             {BRAND.address}
@@ -31,12 +25,6 @@ export default function Footer() {
           <div className="mt-3 flex flex-col gap-2 text-sm font-semibold text-[#6F625A]">
             <a href="#products" className="hover:text-[#FD7C03]">
               Produk
-            </a>
-            <a href="#services" className="hover:text-[#FD7C03]">
-              Servis
-            </a>
-            <a href="#process" className="hover:text-[#FD7C03]">
-              Proses
             </a>
             <a href="#order" className="hover:text-[#FD7C03]">
               Tempahan
