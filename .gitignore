@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+dist/
+build/
+.env
+.env.*
+*.log
+
+# Unrelated local reference project inside this folder.
+stickerkita-order-tracker/
